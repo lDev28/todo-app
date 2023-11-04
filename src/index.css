@@ -6,3 +6,15 @@
 	margin: 0;
 	padding: 0;
 }
+
+input:focus,
+input:hover,
+input:active {
+	border: 1px #ccc solid;
+	outline: none;
+}
+
+input {
+	border: 1px #f1ece6 solid;
+	outline: none;
+}

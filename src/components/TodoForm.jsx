@@ -4,7 +4,6 @@ import MyButton from './UI/button/MyButton'
 
 const TodoForm = ({ addTodo }) => {
 	const [todoTitle, setTodoTitle] = useState('')
-	// const [todoDescription, setTodoDescription] = useState('')
 
 	const addTododo = (e) => {
 		e.preventDefault()
@@ -13,18 +12,16 @@ const TodoForm = ({ addTodo }) => {
 				id: Date.now(),
 				title: todoTitle,
 				done: false
-				// description: todoDescription
 			}
 			addTodo(todo)
 			setTodoTitle('')
-			// setTodoDescription('')
 		} else {
 			console.log('enter')
 		}
 	}
 
 	return (
-		<form className='w-full flex flex-row'>
+		<form className='w-full flex flex-row mt-[70px]'>
 			<MyInput
 				type='text'
 				value={todoTitle}

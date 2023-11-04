@@ -5,6 +5,7 @@ import TodoForm from './components/TodoForm'
 import { useEffect } from 'react'
 import Header from './components/Header'
 import TodoList from './components/TodoList'
+import Footer from './components/Footer'
 
 function App() {
 	const todos = useSelector((state) => state.todos.todos)
@@ -29,6 +30,7 @@ function App() {
 				<TodoForm addTodo={addTodo} />
 				<TodoList />
 			</div>
+			<Footer />
 		</>
 	)
 }
